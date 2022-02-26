@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaHome, FaSignInAlt, FaUserAlt } from 'react-icons/fa';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import { useSelector } from 'react-redux';
 
 import { Nav } from './styled';
@@ -10,15 +10,15 @@ export default function Header() {
 
   return (
     <Nav>
-      <a to="/">
+      <Link to="/">
         <FaHome size={24} />
-      </a>
-      <a to="/login">
+      </Link>
+      <Link to="/login">
         <FaUserAlt size={24} />
-      </a>
-      <a to="/asdasd">
+      </Link>
+      <Link to="/asdasd">
         <FaSignInAlt size={24} />
-      </a>
+      </Link>
     </Nav>
   );
   // {botaoClicado ? 'Clicado' : 'Não clicado'}
