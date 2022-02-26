@@ -1,17 +1,17 @@
 import React from 'react';
 
 import { Container } from '../../styles/GlobalStyles';
-import { Paragrafo } from './styled';
+import { Paragrafo, Title } from './styled';
 
 export default function Login() {
   return (
     <Container>
-      <h1>
+      <Title>
         Login
         <small>Oie</small>
-      </h1>
+      </Title>
       <Paragrafo>Lorem ipsum dolor sit amet.</Paragrafo>
-      Enviar
+      <button type="button">Enviar</button>
     </Container>
   );
 }
