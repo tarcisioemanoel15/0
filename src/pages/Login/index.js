@@ -1,9 +1,10 @@
 import React from 'react';
-
+// import { toast } from 'react-toastify';
 import { Container } from '../../styles/GlobalStyles';
 import { Paragrafo, Title } from './styled';
 
 export default function Login() {
+  // toast.success('suuuucesso');
   return (
     <Container>
       <Title>
