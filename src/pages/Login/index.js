@@ -3,15 +3,14 @@ import { useDispatch } from 'react-redux';
 // import { toast } from 'react-toastify';
 import { Container } from '../../styles/GlobalStyles';
 import { Paragrafo, Title } from './styled';
+import * as exampleAction from '../../store/modules/example/actions';
 
 export default function Login() {
   const dispatch = useDispatch();
   // toast.success('suuuucesso');
   function handleClick(e) {
     e.preventDefault();
-    dispatch({
-      type: 'BOTAO_CLICADO',
-    });
+    dispatch(exampleAction.botaoClicado());
   }
   return (
     <Container>
