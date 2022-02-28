@@ -10,7 +10,7 @@ export default function Login() {
   // toast.success('suuuucesso');
   function handleClick(e) {
     e.preventDefault();
-    dispatch(exampleAction.botaoClicado());
+    dispatch(exampleAction.clicaBotaoRequest());
   }
   return (
     <Container>
